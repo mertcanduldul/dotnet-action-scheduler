@@ -1,6 +1,8 @@
+using Core.Model;
+
 namespace Core.Repository;
 
-public class IEmailRepository
+public interface IEmailRepository : IRepository<CN_EMAIL_QUEUE>
 {
-    
+    Task<IEnumerable<string>> GetEmailByFromMail();
 }

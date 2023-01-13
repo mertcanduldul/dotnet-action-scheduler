@@ -24,7 +24,7 @@ public class EmailService:IEmailService
         throw new NotImplementedException();
     }
 
-    public Task AddAsync(CN_EMAIL_QUEUE entity)
+    public Task<int> AddAsync(CN_EMAIL_QUEUE entity)
     {
         throw new NotImplementedException();
     }
